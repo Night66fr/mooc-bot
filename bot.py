@@ -30,7 +30,7 @@ async def on_ready():
 @bot.command()
 async def mooc(ctx, member: discord.Member):
     if member.id == ctx.author.id:
-        await ctx.send("Tu peux pas te mooc toi-même 💀")
+        await ctx.send("Tu peux pas te mooc toi-même")
         return
 
     key = f"{ctx.author.id}-{member.id}"
